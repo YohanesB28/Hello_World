@@ -58,9 +58,9 @@ public class CommonCal extends javax.swing.JFrame {
         exit = new javax.swing.JButton();
         persen = new javax.swing.JButton();
         tambah = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        common = new javax.swing.JButton();
+        Another = new javax.swing.JButton();
+        currency = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -251,11 +251,16 @@ public class CommonCal extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("jButton1");
+        common.setText("Common");
 
-        jButton2.setText("jButton2");
+        Another.setText("Another");
+        Another.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AnotherActionPerformed(evt);
+            }
+        });
 
-        jButton3.setText("jButton3");
+        currency.setText("Currency");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -316,11 +321,11 @@ public class CommonCal extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
                 .addGap(36, 36, 36)
-                .addComponent(jButton1)
+                .addComponent(common)
                 .addGap(36, 36, 36)
-                .addComponent(jButton2)
+                .addComponent(Another)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton3)
+                .addComponent(currency)
                 .addGap(30, 30, 30))
         );
         layout.setVerticalGroup(
@@ -328,9 +333,9 @@ public class CommonCal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(17, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3))
+                    .addComponent(common)
+                    .addComponent(Another)
+                    .addComponent(currency))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -579,6 +584,12 @@ public class CommonCal extends javax.swing.JFrame {
         area.setText(history + "\n" + current);
     }//GEN-LAST:event_kyuActionPerformed
 
+    private void AnotherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AnotherActionPerformed
+        this.setVisible(false);
+        Another lain=new Another();
+        lain.setVisible(true);
+    }//GEN-LAST:event_AnotherActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -615,18 +626,18 @@ public class CommonCal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Another;
     private javax.swing.JTextArea area;
     private javax.swing.JButton backspace;
     private javax.swing.JButton bagi;
     private javax.swing.JButton clear;
+    private javax.swing.JButton common;
+    private javax.swing.JButton currency;
     private javax.swing.JButton equal;
     private javax.swing.JButton exit;
     private javax.swing.JButton go;
     private javax.swing.JButton hachi;
     private javax.swing.JButton ichi;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton kali;
     private javax.swing.JButton koma;
