@@ -10,16 +10,18 @@ package LatWarmUp;
  * @author Bagus Tri Gularso
  */
 public class no3 {
+
     public static void main(String[] args) {
-        int x=19;
-        for (int i = 0; i < 20; i++) {
-            for (int j = 0; j < 20; j++) {
-                if (i==j) {
-                    System.out.print("*");
-                }else if (j==x) {
-                    System.out.print("x");
-                }  else{
-                    System.out.print("0");
+        int count = 10;
+        int x = count - 1;
+        for (int i = 0; i < count; i++) {
+            for (int j = 0; j < count; j++) {
+                if (i == 0 || i == count - 1) {
+                    System.out.print("$ ");
+                } else if (i == j || j == x) {
+                    System.out.print("$ ");
+                } else {
+                    System.out.print(". ");
                 }
             }
             System.out.print("\n");
