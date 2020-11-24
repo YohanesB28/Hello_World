@@ -10,19 +10,26 @@ package LatWarmUp;
  * @author Bagus Tri Gularso
  */
 public class NewClass1 {
-    void makan(String makanan){
+
+    void makan(String makanan) {
         System.out.println("Hi!");
-        System.out.println("Saya sedang makan "+makanan);
+        System.out.println("Saya sedang makan " + makanan);
     }
-    
-    static void minum(String minuman){
-        System.out.println("Saya sedang minum "+minuman);
+
+    static void minum(String minuman) {
+        System.out.println("Saya sedang minum " + minuman);
     }
-    
+
     public static void main(String[] args) {
-        minum("ThaiTea");
-        System.out.println();
-        NewClass1 coba=new NewClass1();
-        coba.makan("Yakisoba");
+//        minum("ThaiTea");
+//        System.out.println();
+//        NewClass1 coba=new NewClass1();
+//        coba.makan("Yakisoba");
+        int r = 6;
+        if (r % 2 != 0) {
+            System.out.println("ini ganjil");
+        }else{
+            System.out.println("ini genap");
+        }
     }
 }
