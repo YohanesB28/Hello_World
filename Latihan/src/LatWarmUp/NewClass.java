@@ -14,8 +14,8 @@ import java.util.Scanner;
 public class NewClass {
 
     public static void main(String[] args) {
-        NewClass saya=new NewClass();
-        saya . cetak("Hiichan");
+        NewClass saya = new NewClass();
+        saya.cetak("Hiichan");
 //        int[] arr = {2, 4, 2, 5, 4, 3, 5, 3};
 //        String dup = "";
 //        boolean cek = false;
@@ -32,9 +32,12 @@ public class NewClass {
 //        } else {
 //            System.out.println("Duplikasi = " + dup);
 //        }
+        for (int i = 0; i < 10 || i<5; i++) {
+
+        }
     }
-    
-    void cetak(String member){
-        System.out.println(member+" Kawaiii");
+
+    void cetak(String member) {
+        System.out.println(member + " Kawaiii");
     }
 }
